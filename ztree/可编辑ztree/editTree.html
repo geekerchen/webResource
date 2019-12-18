@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="../../js/static/libs/jquery-2.1.1.min.js"></script>
+    <!--[if lt IE 9]><script src="/static/common/h5fix.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="../../static/css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../static/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/ztree/Tree/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" href="../../static/css/adminlte/AdminLTE.min.css">
+    <link rel="stylesheet" href="../../static/css/core/core.css">
+    <link rel="stylesheet" href="../../static/css/common/common.css">
+</head>
+<body class="hold-transition">
+<div class="wrapper">
+    <div class="main-content">
+        <div class="box-header">
+            <div class="box-title">
+                编辑树
+            </div>
+        </div>
+        <div class="box-body">
+            <ul id="tree" class="ztree">
+                <li style="margin-top: 100%;margin-left: 50%"><img src="../../img/loading.gif"/></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<a id="scroll-up" href="#" class="btn btn-sm"><i class="fa fa-angle-double-up"></i></a>
+<script type="text/javascript" src="../../js/static/libs/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="../../static/css/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../static/css/adminlte/adminlte.min.js"></script> <!-- adminlte -->
+<script type="text/javascript" src="../../static/css/core/core.js"></script>
+<script type="text/javascript" src="../../static/css/core/core_zh_CN.js"></script>
+<script type="text/javascript" src="../../layui/lay/modules/layer.js"></script>   <!-- layui的 弹出层插件 -->
+<script type="text/javascript" src="../../js/static/ztree/jquery.ztree.all.min.js"></script>
+<script type="text/javascript" src="../../static/css/common/common.js"></script> <!-- 公共库js -->
+<script type="text/javascript" src="../../js/static/jq.js"></script>   <!-- ajax请求token  js -->
+<script type="text/javascript">
+    var zTree;
+    var setting = {
+        view:{
+            dblClickExpand: false,//双击节点时，是否自动展开父节点的标识
+            showLine: true,//是否显示节点之间的连线
+            fontCss:{'color':'black','font-weight':'normal'},//字体样式函数,
+            selectedMulti:false,
+            addHoverDom:addHoverDom,
+            removeHoverDom:removeHoverDom
+        },
+        edit: {
+            enable: true,
+            editNameSelectAll:true,
+            removeTitle:'删除',
+            renameTitle:'重命名'
+        },
+        data: {
+            simpleData: {
+                enable: true,
+                idKey: "id",
+                pIdKey: "parentId",
+                rootPId: 0
+            },
+            key:{
+                name:"name"
+            }
+        },
+        callback:{
+            beforeRemove:beforeRemove,//点击删除时触发，用来提示用户是否确定删除（可以根据返回值 true|false 确定是否可以删除）
+            beforeEditName: beforeEditName,//点击编辑时触发，用来判断该节点是否能编辑
+            beforeRename:beforeRename,//编辑结束时触发，用来验证输入的数据是否符合要求(也是根据返回值 true|false 确定是否可以编辑完成)
+            onRemove:onRemove,//(beforeRemove返回true之后可以进行onRemove)删除节点后触发，用户后台操作
+            onRename:onRename,//编辑后触发，用于操作后台
+            beforeDrag:beforeDrag,//用户禁止拖动节点
+            onClick:clickNode//点击节点触发的事件
+        }
+    };
+
+    $(function(){
+        var plantId;
+        if(plantId == undefined){
+            plantId = getSroragePlantId();
+        }
+        $.ajax({
+            type : 'GET',
+            url : '/equipments/getEqpTreeList',
+            data:{
+                plantId:plantId
+            },
+            contentType: "application/json; charset=utf-8",
+            success:function(data){
+                zTree = $.fn.zTree.init($("#tree"), setting, data);
+            }
+        });
+
+    });
+
+    function addHoverDom() {
+
+    }
+    function removeHoverDom() {
+
+    }
+    function beforeRemove() {
+
+    }
+    function beforeEditName() {
+
+    }
+    function beforeRename() {
+
+    }
+    function onRemove() {
+
+    }
+    function onRename() {
+
+    }
+    function beforeDrag() {
+
+    }
+    function clickNode() {
+
+    }
+</script>
+</body>
+</html>

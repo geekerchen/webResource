@@ -1,0 +1,306 @@
+
+/*---------------------reset----------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0; border:0; outline:0;}
+ol, ul, li { list-style:none } 
+body { background:#FFF;}
+:focus { outline:none }
+input[type=button], input[type=submit], button { cursor:pointer; outline:none;}
+.input, select { vertical-align:middle }
+* html .clearfix { zoom:1 }
+*+html .clearfix { zoom:1 }
+textarea{resize:none;}
+a { text-decoration:none; color:#009bd8 }
+.clearfix:after {clear: both;content: ".";display: block;height: 0;overflow: hidden;visibility: hidden;}
+.pos-r{ position:relative;}
+.hide{ display:none;}
+/*---------------------header----------------------*/
+
+.header{ height: 100px;margin:0px auto; overflow: hidden; position: relative; width: 1200px; z-index: 2;}
+.headerLogo{
+	padding: 20px 0;
+}
+.headerNav { right: 0;text-align: right;top: 30px; width: 300px; position:absolute;}
+.headerNav a{ color:#515151; font-size:12px; padding:0 2px;}
+.headerNav a:hover{ text-decoration:underline; color:#658b98;}
+
+/*---------------------banner----------------------*/
+.banner{ min-width:1200px;min-height:430px; position:relative;background: url(../img/login/banner-shdow.png);background-size:cover;overflow: hidden;-ms-behavior: url(common/backgroundsize.min.htc);
+ -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/login/banner-shdow.png',sizingMethod='scale');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/login/banner-shdow.png',sizingMethod='scale');
+}
+.banner .bd{ position:absolute;width:100%;top:0px; z-index:0;  }
+.banner .build{position: relative;
+	width:900px;
+    max-height: 750px;
+    margin-left:-80px;
+    z-index: 999;}
+ .banner .build img{
+ 	display: block;
+ 	border: 0;
+ 	width: 100%;
+ 	height: 90%;
+ }
+.banner .bd ul{ width:100% !important; }
+.banner .bd li{ width:100% !important; }
+.banner .bd li .siteWidth{ width:1000px; position:relative;  margin:0 auto;  height:299px;  }
+.banner .bd li a{ height:299px; display:block;  }
+.banner .bd .txt{ position:absolute; width:415px; top:100px; left:22px;   font:normal 18px/30px "Microsoft YaHei";    }
+
+.footer{text-align:center;line-height: 100px;position:fixed;bottom:0;left:0;width:100%;height:100px; font-size:12px; color:#999999;background: #fff;z-index: 999999;}
+.login-aside{position:absolute; width:380px;height: 430px;z-index:99; border-radius:8px; right:0%; top:50%; margin-top: -200px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #0068B7 inset;
+    -moz-box-shadow: 0 0 0px 1000px #0068B7 inset;
+    -mis-box-shadow: 0 0 0px 1000px #0068B7 inset;
+    -webkit-text-fill-color: #fff !important;
+    -moz-text-fill-color: #fff !important;
+    -mis-text-fill-color: #fff !important;
+}
+input::-webkit-input-placeholder {
+      color: #fff!important;
+      font-size: 12px;
+      text-align: left;
+  }
+.login-aside:before{
+	content:"";
+	display:block;
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	z-index:-99;
+	background: url(../img/login/formBg.png) no-repeat;
+	behavior: url(common/ie-css3.htc);
+}
+ .login-aside:after{
+ 	content:"";
+	display:block;
+	position:absolute;
+	top:-20px;
+	left: -20px;
+	width: 106%;
+	height: 106%;
+	z-index:-9999;
+	background: url(../img/login/formBgShadow.png) no-repeat;
+	behavior: url(common/ie-css3.htc);
+ }
+.error-box{
+color:#f7ccc8;
+font-size:12px;
+margin-bottom:10px;
+}
+
+.sysTitle{
+	color: #fff;
+	text-align: center;
+	margin: 50px auto;
+	font-weight: normal;
+}
+#o-box-up{
+	top:0;
+	left:0;
+	position: absolute;
+}
+#o-box-up:after{
+	content:"";
+	display:block;
+	position:absolute;
+	top:-248px;
+	left: -340px;
+	width: 1082px;
+	height: 860px;
+	z-index:-9999;
+	background: url(../img/login/formBackRound.png) no-repeat;
+	behavior: url(common/ie-css3.htc);
+}
+
+
+label.form-label {
+    display: block;
+    float: none;
+    height: auto;
+    line-height: 12px;
+    text-align: left;
+    width: auto;
+	font-size:14px;
+	color:#fff;
+	font-weight:bold;
+	text-shadow:1px 1px 1px #4e6877;
+	-o-text-shadow:1px 1px 1px #4e6877;
+	-o-moz-shadow:1px 1px 1px #4e6877;
+	-o-mis-shadow:1px 1px 1px #4e6877;
+	-o-webkit-shadow:1px 1px 1px #4e6877;
+	behavior: url(common/ie-css3.htc);
+}
+
+.i-text{ 
+  width:100%;
+  height:36px;
+  box-sizing:border-box;
+  padding-left:20px;
+  line-height:36px;
+  border:1px solid #ccc;
+  color:#fff;
+  background-color:#0068B7;
+  font-size:14px; 
+  border-radius:6px;
+  text-indent:12px; 
+  box-shadow:1px 1px 1px #0068B7 inset;
+  -moz-box-shadow:1px 1px 1px #0068B7 inset;
+  -webkit-box-shadow:1px 1px 1px #0068B7 inset;
+  -o-box-shadow:1px 1px 1px #0068B7 inset;
+  -mis-box-shadow:1px 1px 1px #0068B7 inset;
+  behavior: url(common/ie-css3.htc);
+ }
+ 
+ .yzm{ width:112px;}
+ .yzm-img{ position:absolute; left:130px; top:30px; cursor:pointer;}
+
+.btn-login{background:#FFF; color:#0168B7;width: 100%;  padding-left:0px;border:none;}
+.content{
+	max-width: 1200px;
+	height:100%;
+	min-height:400px;
+	margin: 0 auto;
+	position:relative;
+}
+.fm-item{
+	margin-top: 30px;
+}
+.fm-item .form-label{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+.icon{
+	display:block;
+	width: 100%;
+	height: 100%;
+}
+.icon-user{
+	background:url(../img/login/account.png) no-repeat;behavior: url(common/ie-css3.htc);
+}
+.icon-password{
+	background:url(../img/login/password.png) no-repeat;behavior: url(common/ie-css3.htc);
+}
+
+.ectOpt span,
+.ectOpt a{
+	color:#fff;
+	font-size: 12px;
+	line-height: 28px;
+}
+.ectOpt .forget{
+	float: right;
+}
+.h-light{
+  border:1px solid #80acd9;
+  background:#fff;
+  color:#9cb5cd;
+  font-size:14px; 
+  text-indent:12px; 
+  border-color: #0787be;
+  box-shadow: 0 1px 4px rgba(11, 122, 179, 0.65) inset, 0 0 14px rgba(11, 122, 179, 0.45);behavior: url(common/ie-css3.htc);
+
+}
+.fz12{font-size:12px;}
+.main{padding-bottom:60px; padding-top:36px;}
+.main h1,
+.main h2,
+.main h3{padding-left:10px;}
+.main h1{text-align:center;color: #212222; font-family: "microsoft yahei"; font-size: 36px; font-weight: normal; line-height: 2em; margin-bottom: 36px;}
+.main h2{background-color:#eee; line-height:2!important;}
+.main h3{font-size:20px; margin-bottom:10px;}
+.lireset2{padding-left:10px;}
+.registerform{margin: 30px 60px;}
+.registerform .need{
+	width:10px;
+	color:#b20202;
+}
+.registerform td{
+	padding:5px 0;
+	vertical-align:top;
+	text-align:left;
+}
+.registerform .inputxt,.registerform textarea{
+	border:1px solid #a5aeb6;
+	width:196px;
+	padding:4px 2px;
+}
+.registerform textarea{
+	height:75px;
+}
+
+.registerform .tip{
+	line-height:20px;
+	color:#5f6a72;
+}
+.registerform select{
+	width:202px;
+}
+.registerformalter select{
+	width:124px;
+}
+.swfupload{
+	vertical-align:top;
+}
+.passwordStrength{
+
+}
+.passwordStrength b{
+	font-weight:normal;
+}
+.passwordStrength b,.passwordStrength span{
+	display:inline-block; 
+	vertical-align:middle;
+	line-height:16px;
+	line-height:18px\9;
+	height:16px;
+}
+.passwordStrength span{
+	width:45px; 
+	text-align:center; 
+	background-color:#d0d0d0; 
+	border-right:1px solid #fff;
+}
+.passwordStrength .last{
+	border-right:none;
+}
+.passwordStrength .bgStrength{
+	color:#fff;
+	background-color:#71b83d;
+}
+#demo1 .passwordStrength{
+	margin-left:8px;
+}
+.tipmsg{
+	padding:0 10px;
+}
+
+#info{
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	color:red;
+	font-size: 14px;
+}
+
+
+@media(max-width:1378px) {
+	.banner .build{position: relative;
+	width:620px;
+    max-height: 430px;
+    margin-left:0px;
+    z-index: 999;}
+ .banner .build img{
+ 	display: block;
+ 	border: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	padding-top:0;
+ }
+}
+
+

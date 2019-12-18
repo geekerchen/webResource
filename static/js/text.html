@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<div style="width:200px; height:60px">
+		
+		<textarea id="test" style="width:600px; height:200px;overflow: hidden;word-break:break-all;"></textarea>
+	</div>
+	<div class="img"></div>>
+<img src="">
+<script type="text/javascript">
+	
+	var str = "";
+
+	for (var i = 10 - 1; i >= 0; i--) {
+		if(i==0){
+			id = '';
+		}else{
+			id=i;
+		}
+		var htt = "http://e8.weaver.com.cn/wui/theme/ecology8/page/images/skin/color"+id
+		+"_wev8.png ";
+		str += "<a src='"+htt+"' download='id"+id+"'><img src=='"+htt+"'></a>";
+	}
+	$(".img").html(str);
+
+	var ds = "dsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsasdsadasdsadsadadsas";
+	//$("#test").html(ds);
+	$("#test").val(ds);
+</script>
+</body>
+</html>

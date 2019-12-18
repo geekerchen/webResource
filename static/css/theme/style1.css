@@ -1,0 +1,39 @@
+
+.topcolor{
+	background-color: #D25151!important;
+	margin:0;
+}
+.leftcolor{
+	background-color:#482A49!important;
+}
+
+.sidebar-menu>.treeview>.treeview-menu {
+		background-color: #B25151!important;
+}
+
+.sidebar-menu>.treeview>.treeview-menu .treeview-menu{
+	background-color: #C25151!important;
+}
+
+.sidebar-menu .treeview-menu>li>a{
+	color:#CCCCCC ;
+}
+
+.lfFoot{
+    width: 225px;
+    background: none repeat scroll 0 0 #383F48;
+    color: #FFFFFF;
+    height: 55px;
+    vertical-align: middle;
+    line-height: 55px;
+    
+}
+.navbar-custom-menu>ul>li,
+.navbar-custom-menu>ul>li>a{
+	background-color: transparent!important;
+	color: #fff!important;
+}
+.sidebar-menu>.menu-open>a{
+	background-color: #e25151;
+	color: #fff;
+}

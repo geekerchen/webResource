@@ -1,0 +1,442 @@
+.clearfix:after{
+	content: "";
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+/** header及菜单部分宽高度 **/
+.layui-header{
+	height: 50px;
+}
+.layui-layout-admin .layui-side{
+	top:50px;
+}
+.layui-layout-admin .layui-body{
+	top:50px;
+	bottom:0px;
+	left: 225px;
+}
+.layui-layout-admin .layui-side{
+	width: 225px;
+}
+.layui-nav-child{
+	top:55px;
+}
+.logo{
+	width: 440px;
+	height: 24px;
+	padding:12px 10px;
+	display: block;
+}
+.logo img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.admin-login-box span{
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 10px;
+    color: #fff;
+    padding-left: 10px;
+}
+.theme-header{
+    height: 50px;
+    overflow: hidden;
+    text-align: left;
+    line-height: 50px;
+    width: 225px;
+	/* background-color: #008df6; */
+}
+#header{
+	/* background-color: #0070C1; */
+	margin:0;
+}
+.header-demo .layui-nav .layui-nav-item a:hover, .header-demo .layui-nav .layui-this a{
+	color:#fff;
+}
+.header-demo .layui-nav .layui-nav-item a {
+    color: #fff;
+}
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+	height: 0;
+}
+.logOutMenu .layui-nav-child a{
+	color:#333!important;
+}
+#slideBtn{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #383f48;
+	z-index: 999;
+}
+#admin-side{
+	/* background-color: #2A2E34!important; */
+}
+#admin-subside{
+	display: none;
+	width: 0;
+	top: 0px;
+}
+#admin-subside .layui-side-scroll{
+	width: 100%;
+	display: table;
+}
+#admin-subside .layui-side-scroll #menuFull{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.rightmenu{
+	position: absolute;
+	width: 100px;
+	z-index: 9999;
+	display: none;
+	background: #fff;
+	padding: 2px;
+	top:0;
+	left: 0;
+	border: 1px solid #eee;
+  	border-radius: 2px;
+  	cursor: pointer;
+}
+
+.rightmenu li {text-indent:10px; display: block; height: 35px; line-height: 35px; }
+.rightmenu li:hover { background-color: #e1e3e9;}
+
+#admin-side .layui-nav{
+	/* background-color: #2A2E34!important; */
+}
+.pull-left{
+	float: left!important;
+}
+
+.pull-right{
+	float: left!important;
+}
+
+#subMenu{
+    position: relative;
+    right: 0;
+    top: 0;
+    padding: 0;
+    float:left;
+    background: none;
+}
+
+#lfFoot{
+	position: fixed;
+	left: 0;
+	bottom: 0px;
+	z-index: 9999;
+}
+
+.lfFoot{
+    width: 225px;
+    background: none repeat scroll 0 0 #383F48;
+    color: #FFFFFF;
+    height: 55px;
+    vertical-align: middle;
+    line-height: 55px;
+    
+}
+.leftMenuBottom {
+    /* background-color: #383F48; */
+}
+.slideItemText {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    font-family: 微软雅黑, verdana;
+    font-size: 14px;
+    /* color: rgb(164, 204, 235); */
+    height: 35px;
+    margin-top: 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.exitScreenBtn{
+	display: none;
+}
+.exitScreen{
+	display:block;
+	position: fixed;
+	right: 100px;
+	top: 50px;
+	color: red;
+	z-index: 9999;
+}
+.exitScreen a:hover{
+	color: red;
+}
+.mouseDiv{
+	display: none;
+}
+.fullScreenMouseArea{
+	display:block;
+	position: fixed;
+	left: 0px;
+	top: -100px;
+	padding-top:100px;
+	color: red;
+	width:150px;
+	height:100%;
+	background:transparent;
+	z-index: 9998;
+}
+.toggleMenu{
+	float: right;
+	width:40px;
+	height:40px;
+}
+#toggleMenuBtn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    color:#fff;
+}
+/** 一级菜单部分  **/
+.secondBanner{
+    position: absolute;
+    height: 50px;
+    width:100%;
+    overflow: visible;
+    top: 50px;
+    z-index: 999;
+}
+
+.topMenuDiv_top{
+    width: 400px;
+    overflow: hidden;
+    height: 50px;
+    float: left;
+    margin-left: 225px;
+    /* padding-top: 5px; */
+}
+
+.topMenuDiv {
+    /* position: absolute; */
+    height: 40px;
+    overflow: visible;
+    float: left;
+    /* top: 0px;
+    left:0x; */
+}
+
+#divFloatBg {
+    width: 63px;
+    height: 70px;
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.logOutMenu{
+	right: 100px!important;
+}
+#operate,
+.logOutMenu{
+	float: right;
+	height:50px;
+	margin-right:20px;
+	background: transparent;
+}
+
+#operate dl a{
+	color:#000;
+}
+
+.secondBanner .layui-nav-item {
+	line-height: 50px;
+}
+.menuItem {
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    background: none;
+    float: left;
+    position: relative;
+    margin-left: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+.menuItem a{
+    font-family: 微软雅黑, verdana;
+    font-size: 14px;
+    /* color: rgb(164, 204, 235); */
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow: hidden;
+}
+
+/*导航二级菜单**/
+
+#menu{
+	width: 225px;
+}
+#menuFull{
+	width: 150px;
+}
+.layui-nav-tree .layui-nav-item a{
+	height: 40px;
+	line-height: 40px;
+}
+.layui-side-scroll{
+	width: 225px;
+}
+
+
+/* body .layui-nav-itemed>.layui-nav-child{
+	background-color:none!important;
+}
+
+body .layui-nav-tree .layui-nav-bar{
+	background-color:none!important;
+} */
+
+.menuItem:hover a{
+	color: #fff;
+}
+.menuItem i{
+	margin-right: 6px;
+}
+
+.lfootitem {
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    float:left;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.showMenu{
+	float: left;
+	height: 50px;
+}
+.midddleImg{
+	width: 100%;
+	height: 100%;
+}
+.imgBox{
+	display: table;
+	margin: 0 auto;
+}
+.imgBox .midddleImg{
+	padding-top:8px;
+	width:100%
+}
+.midddleImg img{
+	width: 16px;
+	height: 16px;
+}
+
+.menuExpandBtn{
+	/* background-color: #0683E5; */
+}
+#topMenuContr{
+	height: 35px;
+	width: 40px;
+	margin-top: 7px;
+}
+
+.topMenu_over{
+	 
+}
+/**  dialog样式   **/
+body .myDialog .layui-layer-title{
+	height:30px;
+	line-height: 30px;
+	color:#fff;
+	background-color:#4f81bd;
+}
+body .myDialog .layui-layer-setwin{
+	top:8px;
+}
+
+body .myDialog .layui-layer-btn{
+	border-top:1px solid #ccc;
+	height: 44px;
+	padding: 0px;
+	padding-top: 0!important;
+}
+
+body .myDialog .layui-layer-btn a{
+	color:#007aff;
+	background: none;
+	border:none;
+	margin: 9px 0;
+}
+
+body .myDialog .layui-layer-btn a:hover{
+	background: #2690E3;
+	color:#fff;
+}
+
+body .myDialog .layui-layer-setwin a{
+	color:#fff!important;
+}
+
+.menu_Expand {
+	background-position:-287 -0;background-repeat:no-repeat;
+}
+.menu_Contraction {
+	background-position:-259 0; background-repeat:no-repeat;
+	/* background-color:#2a2e34!important;	 */
+	opacity:1!important;
+}
+.leftcolor{
+	/* background-color:#2a2e34!important; */
+}
+
+#contentIframe{
+	border: none;
+}
+
+.layui-tab-content .layui-tab-item{
+	position: relative;
+}
+
+.DcsMenuBox{
+	position: absolute;
+	top:0px;
+}
+
+.admin-side-toggle{
+	width: 10px;
+	height: 40px;
+	position:absolute;
+	top:50%;
+	left:0px!important;
+	background: url(../../img/skin/openTree.png);
+}
+.tl2 {
+	text-indent: 10px;
+}
+.tl3{
+	text-indent: 20px;
+}
+.tl4{
+	text-indent: 30px;
+}
+.tl1 cite{
+	font-size: 14px!important;
+}
+.tl2 cite{
+	font-size: 12px!important;
+	
+}
+.tl3 cite{
+	font-size: 12px!important;
+	
+}
+.tl4 cite{
+	font-size: 12px!important;
+}

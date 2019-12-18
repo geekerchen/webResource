@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1562035895276'); /* IE9 */
+  src: url('iconfont.eot?t=1562035895276#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOwAAsAAAAACJAAAANkAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCfgqEdIQXATYCJAMMCwgABCAFhG0HQxtiB1GU7UmW7EtM4fqAGYBMDGOgQSsgAAcwnHPzHvcA3D0Kwb4AAIiH/9/v2z733q/aZtI4JBZRdPVJk3CNJE0kCJ0UCEWrNZf8FpctzC1MNOOWZG41fXuX9vu3c2Eu9U4gMQohQTiu1jQM+0EFrHA8CxdHEohsuAB0Ea6IPq5T4TABFTIZA47WZXAbrNzV3UoNir+DY6kfJZgH9C5dAfj8D/KcvUgajWwTmZhvkd0Z5EW9TaBt0byuQ7vHZzCosA4F4rKzCgZzKqUlOzSFes3N0ouHaprpfnqCB+Hvx1c7oklSy6x3bZ7dSWD9w/2Hh3y74nC+4850Bgj3yNgOFGKr1rSpJw5t16OthXotgW0lBh8eqspH3bM2+w+PkIg6S9TF2DVhuiK2K3JpbByWcO33qKOHN8Avgp0W1zU2YEYIfJL/aSmp971TnHqHq521IyazM5Xjj4J5MyAHKwz8K+qmALDnZKO7fhzsT/H4VMlg1MetvszgxAQJSaHhmpORXxPc8ZEL8BN3jvNI92CZwfJEh3M4mexOfzwEOc3Lwo8l7LEF2vQr3aOruAsfMJnnxJ89x/sP0wvibVn49VB43vwEOzci0m1mUu0uTOBC/wG34BsPnGZmvhdPL2CykGEMZDScJbJ1Sp/lMUSKEJE9X55RBPLOMQYzSR6HJixMSMhwMXV3CN2N/75X7Pb8eLv4VUKEhLD/Ut+8Jz3jA8vBvsLID+HZ7jhrNvNY9ZHjANWtMsl3wr8IBJ+W3o6PDXb9bzILeLn+8Rtx4RrNV2QOfndCmQB8rs7F6lzqWO4BgeymgRdara2NimUb+xsumYEzCU2zFJKGBcialpAFux1qOnZCXdNeaNtm737HBOsRpYUNnwjC0BckfY8hG/pBFuwv1Mz9Q90wMrRtxeSJHStxYfggkxJKUN+ii8vCOFoZjrJPyF5mirPckHhB3Dgvhl5QjO5RQTzFmebKRiIGDZc57qL3UZaVWHHZpli8lki16Pum7pu8uMxh2EGMKIIkkHYLObFSwfijxXDp508Q61JG4ZamGu0FwhpuehTyBADknqgANd3K+sYVKyKEofsMVsqhXWwgmR0qoap+WxuJCU9rQKCyyCfDDFTkLS/J3+8YtFkfzpEiR9G8camKyhV2/KRTpaWsEgA=') format('woff2'),
+  url('iconfont.woff?t=1562035895276') format('woff'),
+  url('iconfont.ttf?t=1562035895276') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1562035895276#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-quanping:before {
+  content: "\e67b";
+}
+
+.icon-biaogequanping:before {
+  content: "\e67c";
+}
+

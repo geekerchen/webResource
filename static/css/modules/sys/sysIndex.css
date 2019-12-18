@@ -1,0 +1,218 @@
+.fixed .main-header {
+	position: relative;
+	max-height: none
+}
+.wrapper{
+	position: relative;
+}
+.fixed .content-wrapper,.fixed .right-side {
+	padding-top: 0
+}
+
+.fixed .main-header .navbar,.fixed .right-side {
+	margin-left: 0
+}
+
+.fixed .main-sidebar {
+	top: auto;
+	padding-top: 0;
+	position: relative;
+	height: 0
+}
+
+.main-header .logo small {
+	font-size: 17px
+}
+
+.main-header .navbar .dropdow-menu {
+	border-top: 0
+}
+
+.main-header .navbar .dropdown-menu li a {
+	color: #555;
+	padding: 5px 15px 5px 25px
+}
+
+.main-header .navbar .dropdown-menu li a:hover {
+	background: #e1e3e9;
+	color: #555
+}
+
+.main-header .navbar .dropdow.sidebar-menu>li>an-menu li.divider {
+	background-color: #ddd
+}
+
+.navbar-nav>.user-menu>.dropdown-menu {
+	width: auto
+}
+
+.navbar-nav>.messages-menu i.img-circle {
+	margin: auto 10px auto auto;
+	display: block;
+	width: 33px;
+	height: 33px;
+	padding: 9px;
+	font-weight: bold
+}
+
+.navbar-nav>.messages-menu>.dropdown-menu>li.header {
+	border-radius: 0;
+	background-color: #f9f9f9
+}
+
+.user-panel>.image>img {
+	width: 45px;
+	height: 45px;
+	background: #fff
+}
+
+#fullMenuDiv{
+	position: relative;	
+}
+.sidebar-collapse .user-panel>.image>img {
+	width: 27px;
+	height: 27px
+}
+
+.user-panel>.info {
+	padding-left: 11px
+}
+
+.sidebar-menu>li a {
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.sidebar-menu>li>a {
+	padding: 12px 15px 12px 12px;
+	font-size: 15px;
+	color: #ccc;
+}
+
+.sidebar-menu>li>.treeview-menu {
+	margin: 0
+}
+
+.sidebar-menu>.treeview>.treeview-menu {
+	padding-left: 0
+}
+
+.sidebar-menu .treeview-menu>li>a {
+	padding:11px 5px 12px 20px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+
+.main-sidebar,.left-side {
+	width: 200px
+}
+
+.main-header .navbar,.content-wrapper,.right-side,.main-footer {
+	margin-left: 200px
+}
+
+#toggle{
+	width: 10px;
+	height: 40px;
+	top:50%;
+	z-index: 9999;
+	cursor: pointer;
+	background: url(../../../img/skin/openTree.png);
+	position: absolute;
+	left: 0;
+}
+#tabpanel{
+	position: relative;
+}
+.ifr_fixed{
+	width: 1920px!important;
+	height: 1080px!important;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99;
+}
+.full-screen{
+	position: fixed!important;
+	top: 10px;
+	right: 10px;
+	color: red;
+	z-index: 9999;
+}
+#exitScreenBtn{
+	display: none;
+}
+.exitScreen{
+	display:block;
+	position: fixed;
+	right: 100px;
+	top: 50px;
+	color: red;
+	z-index: 9999;
+}
+
+#fullScreenMouseArea{
+	display:none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	padding-top:100px;
+	color: red;
+	width:150px;
+	height:100%;
+	background:transparent;
+	z-index: 9998;
+}
+#fullMenu{
+	display: none;
+	position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -240px;
+}
+.sidebar{
+}
+
+.main-sidebar.slimScrollDiv:nth-child(2) {
+	width: 150px;
+	height: 1080px!important;
+	background:red;
+	display: none;
+}
+
+
+@media(max-width:767px) {
+	.main-header .logo {
+		width: 100%
+	}
+
+	.main-header .navbar,.content-wrapper,.right-side,.main-footer {
+		margin-left: 0
+	}
+
+	.sidebar-open .content-wrapper,.sidebar-open .main-footer {
+		-webkit-transform: translate(200px,0);
+		-ms-transform: translate(200px,0);
+		-o-transform: translate(200px,0);
+		transform: translate(200px,0)
+	}
+}
+.content-wrapper{
+	position: relative;
+}
+.main-header .logo {
+	width: auto;
+	min-width: 200px
+}
+
+@media(min-width:768px) {
+	.sidebar-mini.sidebar-collapse .main-header .logo {
+		width: auto
+	}
+
+	.sidebar-mini.sidebar-collapse .main-header .navbar {
+		margin-left: 0
+	}
+
+}
